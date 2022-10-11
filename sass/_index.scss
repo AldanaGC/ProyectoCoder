@@ -156,6 +156,17 @@ $colorP:#250808;
             }
         /*slider mobile*/
             article {
+                .tittle{
+                    display: flex;
+                    justify-content: center;
+                    h2{
+                        border-top: 1px black solid;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #250808;
+                    }
+                }
                 .slider {
                     width: 100%;
                     height: auto;
@@ -423,24 +434,38 @@ $colorP:#250808;
             }
         }
     /*slider*/
-        .slider {
-            width: 100%;
-            margin: 10px 0;
-            height: auto;
-            overflow: hidden;
-            padding: 50px;
-            ul{
+        article{
+            .tittle{
                 display: flex;
-                width: 300%;
-                padding: 0;
-                animation: slider 20s infinite;
-                li {
-                    width: 100%;
-                    list-style: none;
-                    img {
+                justify-content: center;
+                h2{
+                    margin-top: 30px;
+                    border-top: 1px black solid;
+                }
+                a{
+                    margin-top: 30px;
+                    text-decoration: none;
+                    color: #250808;
+                }
+            }
+            .slider {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                padding: 50px;
+                ul{
+                    display: flex;
+                    width: 300%;
+                    padding: 0;
+                    animation: slider 20s infinite;
+                    li {
                         width: 100%;
-                        padding:0 50px;
-                        border-radius: 3px;
+                        list-style: none;
+                        img {
+                            width: 100%;
+                            padding:0 50px;
+                            border-radius: 3px;
+                        }
                     }
                 }
             }
