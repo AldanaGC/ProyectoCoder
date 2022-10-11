@@ -673,7 +673,7 @@
                     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                     font-size: 30px;
                     margin: 10px;
-                    padding: 100px;
+                    padding: 50px;
                     align-items: center;
                     justify-content: center;
                     background-color: #d1cbc69e;
@@ -682,10 +682,15 @@
                     li {
                         border-bottom: solid #503f1961 1px;
                         color: #614504;
-                    }
-                    li:hover {
-                        color: white;
-                        cursor: pointer;
+                        a{
+                            text-decoration: none;
+                            color: #614504;
+
+                        }
+                        a:hover {
+                            color: white;
+                            cursor: pointer;
+                        }
                     }
                 }
                 .iframe {
