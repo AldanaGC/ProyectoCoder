@@ -518,20 +518,18 @@
         }
     /*page contactos*/
         .contact {
-            display: grid;
-            grid-template-rows: 0.5fr 2fr;
             align-items: center;
             text-align: center;
-            background-image: url(../assets/Imagenes/portadacontacto.jpg);
-            margin-top: 5px;
+            margin-top: 10px;
             border-radius: 10px;
+            padding: 0 100px;
             .tittle {
                 div {
                     h2 {
-                    font-size: 20px;
+                    font-size: 1rem;
                     padding: 10px;
                     text-align: center;
-                    text-shadow:white 4px 2px 6px;
+                    text-shadow:black 4px 2px 6px;
                     }
                 }
                 div {
@@ -543,36 +541,78 @@
             }
             .containerBottom {
                 display: grid;
-                grid-template-rows: 1fr 1fr;
+                grid-template-rows: 1fr 0.5fr;
+                margin: 10px 20px;
+                padding: 0 60px;
+                background-color: #00000057;
                 .formContainer {
-                    margin: 0px auto;
                     padding-top: 20px;
-                    margin: 5px;
+                    margin: 50px 30px;
                     background-color:#ffffff9c;
                     border-radius:10px;
                     form {
                         display: flex;
                         flex-direction: column;
-                        padding: 0 50px;
-                        .firstLine{
-                            input {
-                                width: 100%;
-                            }
+                        margin: 0 10px;
+                        padding: 0 30px;
+                        label {
+                            text-shadow: #ffffffdb -1px -1px 2px;
+                            font-size: 1rem;
+                            margin-bottom: 5px;
+                            margin-top: 5px;
+
                         }
-                        input, textarea {
-                            padding: 0 20px;
+                        input {
+                            width: 100%;
+                            padding: 15px;
                             border: 1px solid grey;
                             border-radius: 5px;
                             margin-bottom: 10px;
-                            font-size: 10px;
+                        }
+                        textarea{
+                            margin: 0 10px;
+                            border-radius: 5px;
+
+                        }
+                        .typeContact{
+                            margin-top: 40px;
+                            legend {
+                                text-align: center;
+                                background-color: #e2e2e257;
+                                border-radius: 20px;
+                            }
+                            .options{
+                                display: flex;
+                                justify-content: center;
+                            }
+                            select{
+                                background-color: #00000057;
+                                color: #fff8f1;
+                                border-radius: 5px;
+                                border: solid 2px rgba(255, 0, 0, 0.142);
+                            }
+                        }
+                        .checkBox{
+                            margin-top: 40px;
+                            font-size: 1rem;
+                            .check{
+                                width: 5%;
+                            }
+                        }
+                        .boton {
+                            width: 50%;
+                            background-color: #1d1c1c69;
+                            color: #ffffff9c;
+                            cursor: pointer;
+                            border-radius: 2px;
                         }
                     }
                 }
                 .listContact {
                     background-color: #ffffff9c;
                     padding: 0 10px;
-                    margin: 20px 50px;
                     border-radius: 10px;
+                    margin: 20px auto;
                     .listTittle {
                         h3 {
                             font-size: 15px;
@@ -786,7 +826,7 @@
         .contact {
             display: grid;
             grid-template-rows: auto;
-            margin: 30px;
+            margin: 10px auto;
             background-image: url(../assets/Imagenes/portadacontacto.jpg);
             background-repeat: no-repeat;
             background-size: cover;
@@ -823,42 +863,61 @@
                         display: flex;
                         flex-direction: column;
                         padding: 0px 150px;
-                        .firstLine{
-                            input {
-                            width: 100%;
-                            padding: 20px;
+                        label {
+                            text-shadow: #ffffffdb -1px -1px 2px;
+                            font-size: 1.5em;
+                            margin-bottom: 5px;
+                            margin-top: 5px;
+
+                        }
+                        input {
+                            width: 50%;
+                            padding: 10px;
+                            margin:0 10px;
                             border-radius: 5px;
                             font-size: 1rem ;
-                            }
-                        }
-                        .secondLine {
-                            input{
-                                margin: 10px 50px;
-                                padding: 20px 10px;
-                                border-radius: 5px;
-                                font-size: 10px;
-                                font-size: 20px;
-                            }
-                        }
-                        .thirthLine {
-                            display: flex;
-                            justify-content: center;
-                            .boton {
-                                background-color: #1d1c1c69;
-                                color: #ffffff9c;
-                                cursor: pointer;
-                                margin: 10px;
-                                padding: 20px;
-                                border-radius: 2px;
-                            }
-                            .boton:hover {
-                                background-color: green;
-                            }
-                        }
-                        h4 {
+                            background-color: #00000057;
                             color: white;
-                            text-align: center;
-                            padding-bottom: 10px; 
+                        }
+                        textarea{
+                            margin: 0 10px;
+                            background-color: #00000057;
+                            border-radius: 5px;
+
+                        }
+                        .typeContact{
+                            margin-top: 20px;
+                            legend {
+                                text-align: center;
+                                background-color: #e2e2e257;
+                                border-radius: 20px;
+                            }
+                            .options{
+                                display: flex;
+                                justify-content: center;
+                            }
+                            select{
+                                background-color: #00000057;
+                                color: #fff8f1;
+                                border-radius: 5px;
+                                border: solid 2px rgba(255, 0, 0, 0.142);
+                            }
+                        }
+                        .checkBox{
+                            margin-top: 40px;
+                            font-size: 1rem;
+                            .check{
+                                width: 5%;
+                            }
+                        }
+                        .boton {
+                            background-color: #1d1c1c69;
+                            color: #ffffff9c;
+                            cursor: pointer;
+                            border-radius: 2px;
+                        }
+                        .boton:hover {
+                                    background-color: green;
                         }
                     }
                 }
@@ -890,5 +949,5 @@
                 }
             }
         }
-    }
+    }      
 }

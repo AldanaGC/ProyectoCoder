@@ -843,19 +843,17 @@
     border-radius: 10px;
   }
   #gridOthers .contact {
-    display: grid;
-    grid-template-rows: 0.5fr 2fr;
     align-items: center;
     text-align: center;
-    background-image: url(../assets/Imagenes/portadacontacto.jpg);
-    margin-top: 5px;
+    margin-top: 10px;
     border-radius: 10px;
+    padding: 0 100px;
   }
   #gridOthers .contact .tittle div h2 {
-    font-size: 20px;
+    font-size: 1rem;
     padding: 10px;
     text-align: center;
-    text-shadow: white 4px 2px 6px;
+    text-shadow: black 4px 2px 6px;
   }
   #gridOthers .contact .tittle div p {
     font-size: 10px;
@@ -863,35 +861,77 @@
   }
   #gridOthers .contact .containerBottom {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    margin: 10px 20px;
+    padding: 0 60px;
+    background-color: rgba(0, 0, 0, 0.3411764706);
   }
   #gridOthers .contact .containerBottom .formContainer {
-    margin: 0px auto;
     padding-top: 20px;
-    margin: 5px;
+    margin: 50px 30px;
     background-color: rgba(255, 255, 255, 0.6117647059);
     border-radius: 10px;
   }
   #gridOthers .contact .containerBottom .formContainer form {
     display: flex;
     flex-direction: column;
-    padding: 0 50px;
+    margin: 0 10px;
+    padding: 0 30px;
   }
-  #gridOthers .contact .containerBottom .formContainer form .firstLine input {
+  #gridOthers .contact .containerBottom .formContainer form label {
+    text-shadow: rgba(255, 255, 255, 0.8588235294) -1px -1px 2px;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  #gridOthers .contact .containerBottom .formContainer form input {
     width: 100%;
-  }
-  #gridOthers .contact .containerBottom .formContainer form input, #gridOthers .contact .containerBottom .formContainer form textarea {
-    padding: 0 20px;
+    padding: 15px;
     border: 1px solid grey;
     border-radius: 5px;
     margin-bottom: 10px;
-    font-size: 10px;
+  }
+  #gridOthers .contact .containerBottom .formContainer form textarea {
+    margin: 0 10px;
+    border-radius: 5px;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .typeContact {
+    margin-top: 40px;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .typeContact legend {
+    text-align: center;
+    background-color: rgba(226, 226, 226, 0.3411764706);
+    border-radius: 20px;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .typeContact .options {
+    display: flex;
+    justify-content: center;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .typeContact select {
+    background-color: rgba(0, 0, 0, 0.3411764706);
+    color: #fff8f1;
+    border-radius: 5px;
+    border: solid 2px rgba(255, 0, 0, 0.142);
+  }
+  #gridOthers .contact .containerBottom .formContainer form .checkBox {
+    margin-top: 40px;
+    font-size: 1rem;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .checkBox .check {
+    width: 5%;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .boton {
+    width: 50%;
+    background-color: rgba(29, 28, 28, 0.4117647059);
+    color: rgba(255, 255, 255, 0.6117647059);
+    cursor: pointer;
+    border-radius: 2px;
   }
   #gridOthers .contact .containerBottom .listContact {
     background-color: rgba(255, 255, 255, 0.6117647059);
     padding: 0 10px;
-    margin: 20px 50px;
     border-radius: 10px;
+    margin: 20px auto;
   }
   #gridOthers .contact .containerBottom .listContact .listTittle h3 {
     font-size: 15px;
@@ -1335,7 +1375,7 @@
   #gridOthers .contact {
     display: grid;
     grid-template-rows: auto;
-    margin: 30px;
+    margin: 10px auto;
     background-image: url(../assets/Imagenes/portadacontacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1368,38 +1408,59 @@
     flex-direction: column;
     padding: 0px 150px;
   }
-  #gridOthers .contact .containerBottom .formContainer form .firstLine input {
-    width: 100%;
-    padding: 20px;
+  #gridOthers .contact .containerBottom .formContainer form label {
+    text-shadow: rgba(255, 255, 255, 0.8588235294) -1px -1px 2px;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  #gridOthers .contact .containerBottom .formContainer form input {
+    width: 50%;
+    padding: 10px;
+    margin: 0 10px;
     border-radius: 5px;
     font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.3411764706);
+    color: white;
   }
-  #gridOthers .contact .containerBottom .formContainer form .secondLine input {
-    margin: 10px 50px;
-    padding: 20px 10px;
+  #gridOthers .contact .containerBottom .formContainer form textarea {
+    margin: 0 10px;
+    background-color: rgba(0, 0, 0, 0.3411764706);
     border-radius: 5px;
-    font-size: 10px;
-    font-size: 20px;
   }
-  #gridOthers .contact .containerBottom .formContainer form .thirthLine {
+  #gridOthers .contact .containerBottom .formContainer form .typeContact {
+    margin-top: 20px;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .typeContact legend {
+    text-align: center;
+    background-color: rgba(226, 226, 226, 0.3411764706);
+    border-radius: 20px;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .typeContact .options {
     display: flex;
     justify-content: center;
   }
-  #gridOthers .contact .containerBottom .formContainer form .thirthLine .boton {
+  #gridOthers .contact .containerBottom .formContainer form .typeContact select {
+    background-color: rgba(0, 0, 0, 0.3411764706);
+    color: #fff8f1;
+    border-radius: 5px;
+    border: solid 2px rgba(255, 0, 0, 0.142);
+  }
+  #gridOthers .contact .containerBottom .formContainer form .checkBox {
+    margin-top: 40px;
+    font-size: 1rem;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .checkBox .check {
+    width: 5%;
+  }
+  #gridOthers .contact .containerBottom .formContainer form .boton {
     background-color: rgba(29, 28, 28, 0.4117647059);
     color: rgba(255, 255, 255, 0.6117647059);
     cursor: pointer;
-    margin: 10px;
-    padding: 20px;
     border-radius: 2px;
   }
-  #gridOthers .contact .containerBottom .formContainer form .thirthLine .boton:hover {
+  #gridOthers .contact .containerBottom .formContainer form .boton:hover {
     background-color: green;
-  }
-  #gridOthers .contact .containerBottom .formContainer form h4 {
-    color: white;
-    text-align: center;
-    padding-bottom: 10px;
   }
   #gridOthers .contact .containerBottom .listContact .listTittle {
     color: rgba(255, 255, 255, 0.6117647059);

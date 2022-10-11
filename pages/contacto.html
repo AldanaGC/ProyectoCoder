@@ -70,25 +70,46 @@
             <div class="containerBottom">
                 <div class="formContainer">
                     <h3>Formulario de contacto</h3>
-                    <form action="">
-                        <div class="firstLine">
-                            <input type="text"placeholder="Nombre*" required class="field">
-                        </div>
-                        <div class="secondLine">
-                            <input type="phone" placeholder="Telefono*" required class="field">
-                            <input type="email" name="email" id="email" placeholder="Email*" required class="field">
-                        </div>
-                        <textarea name="" placeholder="Su consulta" required class="field"></textarea>
-                        <div class="thirthLine">
-                            <input type="submit" value="Enviar" class="boton">
-                            <input type="reset" value="Limpiar" class="boton">
-                        </div>
-                        <h4>Todos los campos son obligatorios*</h4>
+                    <form>
+                        <label for="nombreapellido">Nombre y Apellido</label>
+                        <input type="text" id="nombreapellido" required>
+                
+                        <label for="correoelectronico">Correo Electrónico</label>
+                        <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                        
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+            
+                        <label for="mensaje">Mensaje</label>
+                        <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
+            
+                        <fieldset class="typeContact">
+                            <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                            <div class="options">
+                                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                            
+                                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                            
+                                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                            </div>           
+                        </fieldset>
+                        <fieldset class="typeContact">
+                            <legend>¿En rango horario prefiere ser contactado?</legend>
+                            <select>
+                                <option>8hs-12hs</option>
+                                <option>12hs-16hs</option>
+                                <option>16hs-18hs</option>
+                            </select>
+                        </fieldset>
+            
+                        <label class="checkBox"><input class="check" type="checkbox" checked>¿Le gustaría recibir novedades y ofertas del frigorífico?</label>
+            
+                        <input class="boton" type="submit" value="Enviar formulario">
                     </form>
                 </div>
                 <div class="listContact">
                     <div class="listTittle">
-                        <h3>Otros medios de comunicación</h3>
+                        <h3>Ó contáctenos a los siguientes medios</h3>
                     </div>
                     <div class="contactList">
                         <ul class="list-unstyled">
